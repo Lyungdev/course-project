@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IS445 Demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="new.js" type="module"></script>
+
+</head>
+
+<body>
+    <h1>IS445 Demo</h1>
+    <h2 class="p-3 mb-2 bg-primary text-white">Contact Management
+        <button type="button" class="btn btn-primary btn-outline-light" onclick="window.location.href='index.html';">Index</button>
+        <button type="button" class="btn btn-primary btn-outline-light" onclick="window.location.href='new.html';">New</button>
+    </h2>
+
+    <!-- 3.2 New contact page -->
+    <form id="new-contact-form" method="get" action="index.html">
+        <p id='title'>New Contact</p>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" id="name" placeholder="Enter Name">
+
+            <label for="email">Email :</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" class="form-control" id="phone" aria-describedby="telHelp" placeholder="Enter Phone">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</body>
+
+</html>
